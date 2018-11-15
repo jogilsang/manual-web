@@ -1,7 +1,7 @@
 # manual-web
 
 <center><img src="/1.png"></center>
-
+```
 <b>굵게</b>  
 <strong>굵게</strong>  
 <i>이탤릭</i>  
@@ -14,4 +14,4 @@
 <del>가로선</del>  
 <small>한단계 작게</small>  
 <big>한단계 크게</big>  
- 
+ ```
