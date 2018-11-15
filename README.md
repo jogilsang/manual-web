@@ -1,6 +1,6 @@
 # manual-web
 
-<center><img src="/1.png" width="375" height="667"></center>
+<center><img src="/1.png"></center>
 
 <b>굵게</b>  
 <strong>굵게</strong>  
