@@ -12,6 +12,14 @@ firebase login (web에서 로그인하게됨, 구글 아이디 패스워드)
 firebase use --add (파일들 있는 로컬경로 들어가서, 예 : web-start, 생성한 파베 프로젝트 선택)  
 firebase serve --only hosting (파일들 있는 로컬경로 들어가서, 예 : web-start)  
 
+import in index.html :   
+<script src="/__/firebase/5.7.3/firebase-app.js"></script>  
+<script src="/__/firebase/5.7.3/firebase-auth.js"></script>  
+<script src="/__/firebase/5.7.3/firebase-storage.js"></script>  
+<script src="/__/firebase/5.7.3/firebase-messaging.js"></script>  
+<script src="/__/firebase/5.7.3/firebase-firestore.js"></script>  
+<script src="/__/firebase/init.js"></script>  
+
 npm 설치 안될떄 :  
 https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally  
 
