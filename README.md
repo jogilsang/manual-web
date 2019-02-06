@@ -1,5 +1,20 @@
 # manual-web
 
+### 파이어베이스 코드랩 firebase code lab
+
+파이어베이스 코드랩 주소 :  
+https://codelabs.developers.google.com/codelabs/firebase-web/?authuser=0#0  
+
+명령프롬프트 창 :  
+npm -g install firebase-tools  
+firebase --version ( 4.x 이상 확인)  
+firebase login (web에서 로그인하게됨, 구글 아이디 패스워드)  
+firebase use --add (파일들 있는 로컬경로 들어가서, 예 : web-start, 생성한 파베 프로젝트 선택)  
+firebase serve --only hosting (파일들 있는 로컬경로 들어가서, 예 : web-start)  
+
+npm 설치 안될떄 :  
+https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally  
+
 <center><img src="/1.png"></center>
 ```
 <b>굵게</b>  
