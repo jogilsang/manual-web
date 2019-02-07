@@ -9,6 +9,36 @@ https://packagecontrol.io/browse/labels/snippets
 
 ### 파이어베이스 코드랩 firebase code lab
 
+보안규칙 : 
+```
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Messages:
+    //   - Anyone can read.
+    //   - Authenticated users can add and edit messages.
+    //   - Validation: Check name is same as auth token and text length below 300 char or that imageUrl is a URL.
+    //   - Deletes are not allowed.
+    match /messages/{messageId} {
+      allow read;
+      allow create, update: if request.auth != null
+                    && request.resource.data.name == request.auth.token.name
+                    && (request.resource.data.text is string
+                      && request.resource.data.text.size() <= 300
+                      || request.resource.data.imageUrl is string
+                      && request.resource.data.imageUrl.matches('https?://.*'));
+      allow delete: if false;
+    }
+    // FCM Tokens:
+    //   - Anyone can write their token.
+    //   - Reading list of tokens is not allowed.
+    match /fcmTokens/{token} {
+      allow read: if false;
+      allow write;
+    }
+  }
+}
+```
+
 파이어베이스 코드랩 주소 :  
 https://codelabs.developers.google.com/codelabs/firebase-web/?authuser=0#0  
 
