@@ -49,6 +49,8 @@ firebase login (web에서 로그인하게됨, 구글 아이디 패스워드)
 firebase use --add (파일들 있는 로컬경로 들어가서, 예 : web-start, 생성한 파베 프로젝트 선택)  
 firebase serve --only hosting (파일들 있는 로컬경로 들어가서, 예 : web-start)  
 
+firebase deploy --except functions (배포)
+
 import in index.html :   
 <script src="/__/firebase/5.7.3/firebase-app.js"></script>  
 <script src="/__/firebase/5.7.3/firebase-auth.js"></script>  
