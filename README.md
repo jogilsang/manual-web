@@ -13,6 +13,97 @@ https://www.tutorialspoint.com/materialdesignlite/index.htm
 
 https://getmdl.io/index.html    
 
+### 파이어베이스 파이어스토어 자바스크립트 쿼리 firebase firestore javascript query
+
+customers의 userNickname과 일치하는 documnet의 key값을 받아서  
+points 컬렉션을 조회하는 내용. 더불어 doc()의 필드값을 업데이트 함  
+```
+Collection : customers
+                 doc()
+                        timestamp :
+                        currentPoint :
+                        userNickname :
+                        userMail : 
+                             Collection : points
+                                            doc()
+                                               point :
+                                               timestamp :
+```
+```
+// Saves a new message on the Firebase DB.
+function savePoint(userText, pointText) {
+  // 1. 사용자의 userNickname을 찾아서 uid값을 가져온다
+  // 2. 사용자 uid에 대한 point collection에 값을 집어넣는다
+
+  // Create a reference to the cities collection
+  var customerRef = firebase.firestore().collection('customers');
+
+  // Create a query against the collection.
+  var query = customerRef.where("userNickname", "==", userText);
+
+  var inputValue = parseInt(pointText);
+
+  // 사용자 닉네임과 일치하는 쿼리를 진행한다.
+  query
+    .get()
+    .then(function (querySnapshot) {
+
+      querySnapshot.forEach(function (doc) {
+        // doc.data() is never undefined for query doc snapshots
+        console.log(doc.id, " => ", doc.data());
+
+        // 문서의 key값과 점수를 받는다.
+        var documentKey = doc.id;
+        var documentValue = parseInt(doc.data().recentPoint);
+
+        // 저장된 값보다 입력된값이 크면, 변경 아니면 변경하지않음
+        if (inputValue > documentValue) {
+
+          // Set the "capital" field of the city 'DC'
+          return customerRef.doc(documentKey).update({
+            recentPoint: inputValue
+          })
+            .then(function () {
+              console.log("Document successfully updated!");
+              console.log("사용자의 최고점수가 갱신됩니다.");
+            })
+            .catch(function (error) {
+              // The document probably doesn't exist.
+              console.error("Error updating document: ", error);
+              alert("업데이트에 에러가 발생했습니다!");
+            });
+            
+        }
+
+        var pointRef = customerRef.doc(documentKey).collection('points');
+
+        return pointRef.add({
+          point: inputValue,
+          timestamp: firebase.firestore.FieldValue.serverTimestamp()
+        })
+        .then(function(){
+          console.log("Document successfully updated!");
+          alert("점수를 기재합니다.");
+
+        })
+        .catch(function (error) {
+          console.error('Error writing new message to Firebase Database', error);
+          alert("업데이트에 에러가 발생했습니다!");
+        });
+      });
+    })
+    .catch(function (error) {
+      console.log("Error getting documents: ", error);
+      alert("업데이트에 에러가 발생했습니다!");
+    });
+
+  resetMaterialTextfield(messageInputUserElement);
+  resetMaterialTextfield(messageInputPointElement);
+  togglePointButton();
+
+}
+```
+
 ### 파이어베이스 코드랩 firebase code lab
 
 보안규칙 : 
