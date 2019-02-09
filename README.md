@@ -8,8 +8,10 @@ https://packagecontrol.io/browse/labels/snippets
 
 
 ### Material design layout
+학습 :  
+https://www.tutorialspoint.com/materialdesignlite/index.htm  
 
-https://getmdl.io/index.html  
+https://getmdl.io/index.html    
 
 ### 파이어베이스 코드랩 firebase code lab
 
