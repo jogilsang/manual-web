@@ -6,6 +6,11 @@
 스니펫 :  
 https://packagecontrol.io/browse/labels/snippets  
 
+### 키오스크 앱 kiosk app  
+
+크롬북 키오스크 설정 :  
+http://blog.poin2.com/2016/01/%ED%81%AC%EB%A1%AC%EB%B6%81-%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC-kiosk-%EB%AA%A8%EB%93%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/  
+
 
 ### Material design layout
 학습 :  
