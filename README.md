@@ -6,6 +6,80 @@
 스니펫 :  
 https://packagecontrol.io/browse/labels/snippets  
 
+### javascript syntax 자바스크립트 문법
+```
+.then(function () {
+              // Clear message text field and re-enable the SEND button.
+              console.log('배너가 추가됬습니다!');
+              alert("배너가 추가됬습니다!");
+            });
+```
+
+### 파이어스토어 쿼리 firestore query
+set 함수, 콜렉션(collection) size, 스토리지 다운로드링크
+```
+function saveImageMessage(data, file) {
+
+  // 콜렉션 size를 받아오기
+  var bannerRef = firebase.firestore().collection('banner');
+
+  bannerRef.get()
+    .then(function (querySnapshot) {
+
+      var totalDoc = 1;
+
+      querySnapshot.forEach(function(doc) {
+        // doc.data() is never undefined for query doc snapshots
+
+        totalDoc = totalDoc + 1;
+        console.log(doc.id, " => ", doc.data());
+      });
+
+      bannerRef = bannerRef.doc(String(totalDoc));
+
+      // 배너 콜렉션에 넣는다
+      // 1 - We add a message with a loading icon that will get updated with the shared image.
+      bannerRef.set({
+        link: LOADING_IMAGE_URL,
+        text: data
+      }).then(function (ref) {
+        // 2 - Upload the image to Cloud Storage.
+        // var filePath = firebase.auth().currentUser.uid + '/' + messageRef.id + '/' + file.name;
+        // 폴더이름은 이미지/파일명
+        var filePath = 'image' + '/' + file.name;
+        return firebase.storage().ref(filePath).put(file).then(function (fileSnapshot) {
+          // 3 - Generate a public URL for the file.
+          return fileSnapshot.ref.getDownloadURL().then((url) => {
+            // 4 - Update the chat message placeholder with the image's URL.
+            return bannerRef.update({
+              link: url
+              // storageUri: fileSnapshot.metadata.fullPath
+            }).then(function () {
+              // Clear message text field and re-enable the SEND button.
+              console.log('배너가 추가됬습니다!');
+              alert("배너가 추가됬습니다!");
+            });
+          });
+        });
+      }).catch(function (error) {
+        console.error('There was an error uploading a file to Cloud Storage:', error);
+      });
+
+
+    })
+    .catch(function (error) {
+      console.log("Error getting documents: ", error);
+    });
+
+
+
+    resetMaterialTextfield(messageInputBannerElement);
+    globalFile = null;
+    toggleBannerButton();
+
+}
+```
+
 ### 키오스크 앱 kiosk app  
 
 크롬북 키오스크 설정 :  
