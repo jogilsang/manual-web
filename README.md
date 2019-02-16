@@ -1,5 +1,9 @@
 # manual-web
 
+### vs code 단축키 vs 안드로이드스튜디오 단축키
+
+ctrl + d ( ctrl + w )
+
 ### nodejs
 
 ### 서브라임 텍스트 sublime text
