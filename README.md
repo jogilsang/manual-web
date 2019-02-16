@@ -5,6 +5,11 @@
 ctrl + d ( ctrl + w )
 
 ### nodejs
+실행하는 법 :  
+node server.js  
+
+firebase admin SDK 설치하는 법  
+npm init  
 
 ### 서브라임 텍스트 sublime text
 스니펫 :  
