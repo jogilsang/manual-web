@@ -9,7 +9,10 @@ ctrl + d ( ctrl + w )
 node server.js  
 
 firebase admin SDK 설치하는 법  
+```
 npm init  
+npm install firebase-admin --save
+```
 
 ### 서브라임 텍스트 sublime text
 스니펫 :  
