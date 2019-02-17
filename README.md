@@ -15,6 +15,7 @@ firebase init functions
 firebase login
 firebase use --add
 firebase deploy --excepts functions (functions폴더 생김 , index.js)
+functions 폴더 가서 firebase-admin 이랑 functions 
 ```
 
 ```
