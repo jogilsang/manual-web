@@ -4,6 +4,9 @@
 
 ctrl + d ( ctrl + w )
 
+### 파이어베이스 notification 알림 use functions 함수 이용
+https://github.com/firebase/functions-samples/tree/master/fcm-notifications  
+
 ### 파이어베이스 cloud-functions codelab
 init setting (초기설정)
 ```
