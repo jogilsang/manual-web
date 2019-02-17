@@ -4,7 +4,13 @@
 
 ctrl + d ( ctrl + w )
 
+### 파이어베이스 cloud-functions
+```
+firebase init functions
+```
+
 ### nodejs
+
 실행하는 법 :  
 node server.js  
 
