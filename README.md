@@ -4,10 +4,17 @@
 
 ctrl + d ( ctrl + w )
 
-### 파이어베이스 cloud-functions
+### 파이어베이스 cloud-functions codelab
 init setting (초기설정)
 ```
 firebase init functions
+```
+
+코드랩 설정
+```
+firebase login
+firebase use --add
+firebase deploy --excepts functions (functions폴더 생김 , index.js)
 ```
 
 ```
@@ -268,6 +275,7 @@ firebase use --add (파일들 있는 로컬경로 들어가서, 예 : web-start,
 firebase serve --only hosting (파일들 있는 로컬경로 들어가서, 예 : web-start)  
 
 firebase deploy --except functions (배포)
+(폴더내에 functions가 생김)
 
 import in index.html :   
 <script src="/__/firebase/5.7.3/firebase-app.js"></script>  
