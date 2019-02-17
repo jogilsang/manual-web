@@ -5,9 +5,15 @@
 ctrl + d ( ctrl + w )
 
 ### 파이어베이스 cloud-functions
+init setting (초기설정)
 ```
 firebase init functions
 ```
+
+```
+https://codelabs.developers.google.com/codelabs/firebase-cloud-functions/?authuser=0#0
+```
+
 
 ### nodejs
 
