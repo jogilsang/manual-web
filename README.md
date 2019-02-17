@@ -24,6 +24,9 @@ https://codelabs.developers.google.com/codelabs/firebase-cloud-functions/?authus
 ```
 
 
+### 파이어베이스 hosting 사이트 열기
+firebase open hosting:site
+
 ### nodejs
 
 실행하는 법 :  
