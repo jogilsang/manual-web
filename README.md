@@ -4,6 +4,14 @@
 
 ctrl + d ( ctrl + w )
 
+### nodejs excel
+
+using require(XLSX) :  
+https://stackoverflow.com/questions/30859901/parse-xlsx-with-node-and-create-json  
+
+using require(excel to json) :   
+https://medium.com/@samanthaneal/how-to-convert-excel-to-json-with-node-js-31f18d1231d3  
+
 ### 파이어베이스 notification 알림 use functions 함수 이용
 https://github.com/firebase/functions-samples/tree/master/fcm-notifications  
 
