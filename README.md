@@ -4,6 +4,9 @@
 
 ctrl + d ( ctrl + w )
 
+### nodejs xlsx write example
+https://github.com/SheetJS/js-xlsx/issues/817  
+
 ### nodejs excel
 
 using require(XLSX) :  
