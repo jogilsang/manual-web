@@ -7,6 +7,17 @@ ctrl + d ( ctrl + w )
 ### nodejs xlsx write example
 https://github.com/SheetJS/js-xlsx/issues/817  
 
+### nodejs json array 만들기 제이선
+```
+var student = [];
+var obj = {
+    'first_name': name,
+    'last_name': name,
+    'age': age,
+}
+student.push(obj);
+```
+
 ### nodejs excel
 
 using require(XLSX) :  
