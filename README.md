@@ -7,6 +7,9 @@ ctrl + d ( ctrl + w )
 ### nodejs xlsx write example
 https://github.com/SheetJS/js-xlsx/issues/817  
 
+### visual code extention 추천 확장팩
+https://junhobaik.github.io/vsc-plugin-list/
+
 ### nodejs json array 만들기 제이선
 ```
 var student = [];
