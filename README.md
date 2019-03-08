@@ -7,6 +7,14 @@ ctrl + d ( ctrl + w )
 ### nodejs xlsx write example
 https://github.com/SheetJS/js-xlsx/issues/817  
 
+### visual code javascript, nodejs 시작하기 
+
+JavaScript extensions for VS Code :  
+https://visualstudio.microsoft.com/ko/vs/features/node-js/?rr=https%3A%2F%2Fwww.google.co.kr%2F  
+
+visual studio 용 nodejs 도구 :  
+https://visualstudio.microsoft.com/ko/vs/features/node-js/?rr=https%3A%2F%2Fwww.google.co.kr%2F  
+
 ### visual code extention 추천 확장팩
 https://junhobaik.github.io/vsc-plugin-list/
 
