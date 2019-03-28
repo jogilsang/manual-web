@@ -4,6 +4,34 @@
 
 ctrl + d ( ctrl + w )
 
+### html select box 
+```
+   <div class="mdl-selectfield mdl-js-selectfield">
+
+                <label class="mdl-selectfield__label" for="myselect">컬렉션 선택하기 </label>
+
+              <select id="myselect" name="myselect" class="mdl-selectfield__select">
+                <option value=""></option>
+                <option value="option0_value">option 0</option>
+                <option value="option1_value">option 1</option>
+              </select>
+            
+            
+            </div>
+
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <select class="mdl-textfield__input" id="octane" name="octane">
+                  <option></option>
+                  <option value="85">85</option>
+                  <option value="87">87</option>
+                  <option value="89">89</option>
+                  <option value="91">91</option>
+                  <option value="diesel">Diesel</option>
+                </select>
+                <label class="mdl-textfield__label" for="octane">Octane</label>
+              </div>
+```
+
 ### nodejs xlsx write example
 https://github.com/SheetJS/js-xlsx/issues/817  
 
