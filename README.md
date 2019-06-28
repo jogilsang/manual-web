@@ -4,6 +4,11 @@
 
 ctrl + d ( ctrl + w )
 
+### html gone
+```
+<div id="messages-card" style="display:none"
+```
+
 ### html select box 
 ```
    <div class="mdl-selectfield mdl-js-selectfield">
