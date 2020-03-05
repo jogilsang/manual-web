@@ -1,5 +1,16 @@
 # manual-web
 
+### node js express
+```
+src : https://ing-yeo.net/2020/02/study-nodejs-database-mariadb/
+
+npm i -g express-generator
+express FOLDER_NAME --view=pug
+npm i
+npm start
+npm i mariadb
+```
+
 ### vs code 단축키 vs 안드로이드스튜디오 단축키
 
 ctrl + d ( ctrl + w )
