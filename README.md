@@ -1,16 +1,5 @@
 # manual-web
 
-### node js express
-```
-src : https://ing-yeo.net/2020/02/study-nodejs-database-mariadb/
-
-npm i -g express-generator
-express FOLDER_NAME --view=pug
-npm i
-npm start
-npm i mariadb
-```
-
 ### vs code 단축키 vs 안드로이드스튜디오 단축키
 
 ctrl + d ( ctrl + w )
@@ -48,8 +37,6 @@ ctrl + d ( ctrl + w )
               </div>
 ```
 
-### nodejs xlsx write example
-https://github.com/SheetJS/js-xlsx/issues/817  
 
 ### visual code javascript, nodejs 시작하기 
 
@@ -62,24 +49,6 @@ https://visualstudio.microsoft.com/ko/vs/features/node-js/?rr=https%3A%2F%2Fwww.
 ### visual code extention 추천 확장팩
 https://junhobaik.github.io/vsc-plugin-list/
 
-### nodejs json array 만들기 제이선
-```
-var student = [];
-var obj = {
-    'first_name': name,
-    'last_name': name,
-    'age': age,
-}
-student.push(obj);
-```
-
-### nodejs excel
-
-using require(XLSX) :  
-https://stackoverflow.com/questions/30859901/parse-xlsx-with-node-and-create-json  
-
-using require(excel to json) :   
-https://medium.com/@samanthaneal/how-to-convert-excel-to-json-with-node-js-31f18d1231d3  
 
 ### 파이어베이스 notification 알림 use functions 함수 이용
 https://github.com/firebase/functions-samples/tree/master/fcm-notifications  
@@ -112,12 +81,8 @@ https://codelabs.developers.google.com/codelabs/firebase-cloud-functions/?authus
 ### 파이어베이스 hosting 사이트 열기
 firebase open hosting:site
 
-### nodejs
 
-실행하는 법 :  
-node server.js  
-
-firebase admin SDK 설치하는 법  
+### firebase admin SDK 설치하는 법  
 ```
 npm init  
 npm install firebase-admin --save
