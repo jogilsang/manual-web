@@ -1,5 +1,18 @@
 # manual-web
 
+### html
+```html
+<p> </p> : 파라그래프, 단락문단
+<b> </b> : 볼드, 굵게
+<i> </i> : 이탈릭, 기울이게
+<div> </div> : 디비전, 레이아웃 나누기 (줄바꿈됨)
+<span> </span> : display속성 block, 줄바꿈없음
+<li> </li> : 리스트, 목록
+<ol> </ol> : 순서목록
+<ul> </ul> : 순서없는목록
+<table> <tr> <td>
+```
+
 ### vs code 단축키 vs 안드로이드스튜디오 단축키
 
 ctrl + d ( ctrl + w )
