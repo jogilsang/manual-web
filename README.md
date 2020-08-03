@@ -1,5 +1,11 @@
 # manual-web
 
+### 도메인 검색 domain search
+```
+query 
+https://domain.gabia.com/whois/schwhois_popup_result.php?query=www.naver.com
+```
+
 ### html
 ```html
 <p> </p> : 파라그래프, 단락문단
