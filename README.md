@@ -1,5 +1,10 @@
 # manual-web
 
+### OAuth 2.0 문서
+```
+https://tools.ietf.org/html/rfc6749#section-4
+```
+
 ### 도메인 검색 domain search
 ```
 query 
